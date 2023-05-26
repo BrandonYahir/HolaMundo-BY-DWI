@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <input type="button" value="Click en el texto" id="boton">
+    <div id="contenido"></div>
+    
+    <script>
+        let boton = document.querySelector('#boton');
+boton.addEventListener('click', ()=>{
+  let contenedor = document.querySelector('#contenido');
+  let p = document.createElement('p');
+  p.innerText = 'Hola Mundo soy BYFV';
+  contenedor.appendChild(p);
+});
+    </script>
+</body>
+</html>
